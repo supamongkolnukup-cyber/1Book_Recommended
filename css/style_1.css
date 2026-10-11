@@ -280,6 +280,7 @@ h4 {
 h4 {
     font-size: 1.15rem;
     line-height: 1.6;
+    text-align: center;
 }
 
 section[id],
@@ -493,9 +494,17 @@ footer[id] {
 }
 
 .accordion-button img {
+    width: 40px;
+    height: 40px;
     flex: 0 0 40px;
     object-fit: contain;
     opacity: 0.82;
+}
+
+/* จัดภาพและข้อความให้ชิดซ้าย */
+#ideaAccordion .accordion-button {
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .accordion-body {
