@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#681C1C">
+    <meta name="description" content="Booker ชวนสำรวจ Metamorphosis ของ Franz Kafka ผ่านเรื่องย่อ คุณค่าของหนังสือ และคำถามชวนคิด">
+
+    <title>Booker - Metamorphosis</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS ของเรา -->
+    <link rel="stylesheet" href="css/style_1.css">
+</head>
+
+<body>
+    <!-- แถบแสดงความคืบหน้าการอ่าน -->
+    <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+    <!-- Header -->
+    <header class="site-header py-3">
+        <div class="container">
+
+            <div class="row align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <div class="col-auto">
+                    <a href="#" class="brand-link text-decoration-none d-flex align-items-center" aria-label="Booker กลับไปหน้าแรก">
+                        <img src="images/open-book (1).png" alt="Booker Logo" class="me-2" width="50">
+
+                        <span class="fs-3 fw-bold">Booker</span>
+                    </a>
+                </div>
+
+                <!-- Menu -->
+                <div class="col-auto">
+                    <nav class="navbar navbar-expand-md navbar-dark p-0">
+                        <!-- ปุ่ม Hamburger -->
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false"
+                            aria-label="เปิดหรือปิดเมนู">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- รายการเมนู -->
+                        <div class="collapse navbar-collapse" id="mainMenu">
+
+                            <!-- ปุ่มปิดเมนู -->
+                            <button type="button" class="close-menu" aria-label="ปิดเมนู">
+                                &times;
+                            </button>
+
+                            <ul class="navbar-nav ms-auto gap-md-4">
+
+                                <li class="nav-item">
+                                    <a href="#summary" class="nav-link menu-link">
+                                        เนื้อหา
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#features" class="nav-link menu-link">
+                                        คุณค่า
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link menu-link">
+                                        เกี่ยวกับเรา
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero py-5 m">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- คอลัมน์ซ้าย -->
+                <div class="col-md-7 col-lg-7 col-xl-7">
+                    <p class="hero-eyebrow" data-aos="fade-up">A CLASSIC THAT QUESTIONS HUMANITY</p>
+                    <h1 class="hero-title fw-bold">
+                        "เมื่อคุณค่าของมนุษย์ถูกผูกไว้กับหน้าที่…<br>
+                        วันใดที่ทำหน้าที่ไม่ได้
+                        คุณก็อาจเป็นได้แค่ <span>‘แมลง’</span><br>
+                        ตัวหนึ่งในสายตาคนอื่น"
+                    </h1>
+                    <p class="hero-author">— Franz Kafka</p>
+                    <a href="#summary" class="hero-cta">สำรวจเนื้อหา <span aria-hidden="true">→</span></a>
+                </div>
+
+                <!-- คอลัมน์ขวา -->
+                <div class="col-md-5 col-lg-5 col-xl-5 d-flex justify-content-center" data-aos="fade-down">
+                    <img src="images/cover1.jpg" alt="Metamorphosis" class="img-fluid hero-cover" loading="eager">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   <!-- Section 1 : คำโปรย -->
+<section class="container py-5">
+    <div class="quote-box rounded p-5 text-center" data-aos="fade-up" data-aos-duration="700">
+        <p class="fs-4 mb-0" style="font-style: italic;">
+            "เมื่อเกรกอร์ ซัมซา ตื่นขึ้นมาแล้วพบว่าตัวเองได้กลายร่างเป็นแมลงประหลาดขนาดมหึมาบนเตียง..."
+        </p>
+    </div>
+</section>
+
+
+   <!-- Section 2 : เรื่องย่อ -->
+<section id="summary" class="container py-5">
+    <div class="summary-section">
+        <h2 class="text-center mb-4">เรื่องย่อ</h2>
+        <p class="lh-lg text-center" style="text-indent: 2em;">
+            เรื่องราวของชายหนุ่มคนหนึ่งที่มีชื่อว่า "เกรกอร์ ซัมซา"
+            ผู้เป็นเสาหลักเพียงหนึ่งเดียวของบ้านที่ต้องตื่นมาพบกับฝันร้ายที่กลายเป็นจริง
+            เมื่อร่างมนุษย์ของเขากลับกลายเป็น "แมลงยักษ์น่ารังเกียจ" ในชั่วข้ามคืน จากผู้นำครอบครัวที่เคยได้รับความเคารพ
+            กลับต้องกลายเป็นสิ่งมีชีวิตหลบ ๆ ซ่อน ๆ ที่สร้างความหวาดกลัวและภาระให้แก่คนในบ้าน วันเวลาผ่านไป...
+            ไม่เพียงแค่ร่างกายของเกรกอร์เท่านั้นที่แปรเปลี่ยน แต่ "จิตใจ" ของคนที่เขาเรียกว่าครอบครัวก็เริ่มเปลี่ยนไปเช่นกัน
+        </p>
+    </div>
+</section>
+
+
+    <!-- Section 3 : ทำไมจึงควรอ่าน -->
+<section id="features" class="feature-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">หนังสือเล่มนี้ ให้อะไร?</h2>
+        <div class="row g-4">
+            <!-- ข้อ 1 -->
+            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <div class="p-4 border rounded feature-card h-100" data-aos="flip-left">
+                    <img src="images/notorious.png" alt="" class="py-2 img-fluid d-block mx-auto" style="width: 60px;">
+                    <h4>เผชิญหน้ากับความ "คาฟคาเอสก์" (Kafkaesque)</h4>
+                    <p class="lh-lg" style="font-size: 16px; text-indent: 1.5em;">
+                        สัมผัสโลกอันแปลกประหลาดและไร้เหตุผลผ่านเรื่องราวของเกรกอร์ที่ต้องเผชิญกับชะตากรรมที่ไม่อาจควบคุม สะท้อนความโดดเดี่ยวและความไร้อำนาจของมนุษย์ในสังคม
+                    </p>
+                </div>
+            </div>
+            <!-- ข้อ 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="p-4 border rounded feature-card h-100" data-aos="flip-left" data-aos-delay="80">
+                    <span class="feature-number">02</span>
+                    <img src="images/open-book (1).png" alt="" class="feature-icon py-2 img-fluid d-block mx-auto" loading="lazy">
+                    <h4>เนื้อหาสั้นกระชับ แต่ทรงพลัง</h4>
+                    <p class="lh-lg feature-description">
+                        วรรณกรรมขนาดสั้นที่ดำเนินเรื่องอย่างเข้มข้นซึ่งสามารถอ่านจบได้ไม่นาน เหมาะสำหรับผู้ที่อยากเริ่มต้นอ่านวรรณกรรมคลาสสิก
+                    </p>
+                    <a href="#ideaAccordion" class="feature-link">อ่านประเด็นชวนคิด <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <!-- ข้อ 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="p-4 border rounded feature-card h-100" data-aos="flip-left" data-aos-delay="160">
+                    <span class="feature-number">03</span>
+                    <img src="images/rating (1).png" alt="" class="feature-icon py-2 img-fluid d-block mx-auto" loading="lazy">
+                    <h4>กระจกสะท้อนสังคม</h4>
+                    <p class="lh-lg feature-description">
+                        สะท้อนถึงสังคมโลกทุนนิยมชวนตั้งคำถามว่าเรากำลังใช้ชีวิตตามความต้องการของตัวเอง หรือแบกรับความคาดหวังของผู้อื่นมากเกินไป
+                    </p>
+                    <a href="#ideaAccordion" class="feature-link">อ่านประเด็นชวนคิด <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <!-- ข้อ 4 -->
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="p-4 border rounded feature-card h-100" data-aos="flip-left" data-aos-delay="240">
+                    <span class="feature-number">04</span>
+                    <img src="images/star.png" alt="" class="feature-icon py-2 img-fluid d-block mx-auto" loading="lazy">
+                    <h4>วรรณกรรมที่เปิดให้อ่านได้หลายความหมาย</h4>
+                    <p class="lh-lg feature-description">
+                        ตีความได้หลากหลาย ทั้งสัญลักษณ์ของแมลง ความสัมพันธ์ในครอบครัว และการเปลี่ยนแปลงที่เกิดขึ้นกับตัวละคร
+                    </p>
+                    <a href="#ideaAccordion" class="feature-link">อ่านประเด็นชวนคิด <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- Section 4 : จุดชวนคิด -->
+<section class="container py-5">
+
+    <!-- หัวข้อ -->
+    <div class="d-flex justify-content-center align-items-center gap-2 mb-4">
+        <h2 class="mb-0">จุดชวนคิด</h2>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion" id="ideaAccordion">
+
+        <!-- ข้อ 1 -->
+        <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne">
+
+                    <span>1. คุณค่าของคนวัดจากอะไร?</span>
+
+                </button>
+            </h2>
+
+            <div id="collapseOne"
+                 class="accordion-collapse collapse"
+                 aria-labelledby="headingOne"
+                 data-bs-parent="#ideaAccordion">
+
+                <div class="accordion-body lh-lg"
+                     style="text-indent: 2em;">
+                    เมื่อเกรกอร์ไม่สามารถทำงานหาเลี้ยงครอบครัวได้อีกต่อไป
+                    ความสัมพันธ์ระหว่างเขากับครอบครัวก็เปลี่ยนไป
+                    สิ่งนี้ชวนให้เราตั้งคำถามว่า
+                    คุณค่าของมนุษย์ขึ้นอยู่กับประโยชน์ที่มอบให้ผู้อื่นหรือไม่
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ข้อ 2 -->
+        <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo">
+
+                    <span>2. หากเราเปลี่ยนไป คนรอบข้างจะยังยอมรับเราหรือไม่?</span>
+
+                </button>
+            </h2>
+
+            <div id="collapseTwo"
+                 class="accordion-collapse collapse"
+                 aria-labelledby="headingTwo"
+                 data-bs-parent="#ideaAccordion">
+
+                <div class="accordion-body lh-lg"
+                     style="text-indent: 2em;">
+                    การเปลี่ยนแปลงของเกรกอร์เผยให้เห็นว่าท่าทีของคนรอบข้าง
+                    อาจเปลี่ยนไปเมื่อคนคนหนึ่งไม่เหมือนเดิม
+                    ชวนให้คิดถึงความหมายของการยอมรับและความสัมพันธ์ที่แท้จริง
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ข้อ 3 -->
+        <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree">
+
+                    <span>3. เรากำลังใช้ชีวิตเพื่อตัวเองหรือเพื่อความคาดหวังของผู้อื่น?</span>
+
+                </button>
+            </h2>
+
+            <div id="collapseThree"
+                 class="accordion-collapse collapse"
+                 aria-labelledby="headingThree"
+                 data-bs-parent="#ideaAccordion">
+
+                <div class="accordion-body lh-lg"
+                     style="text-indent: 2em;">
+                    ก่อนเกิดเหตุการณ์ในเรื่อง เกรกอร์ต้องทำงานเพื่อหาเลี้ยงครอบครัว
+                    เรื่องราวของเขาจึงชวนให้ทบทวนว่าเรากำลังแบกรับหน้าที่มากจนละเลย
+                    ความต้องการของตัวเองหรือไม่
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ข้อ 4 -->
+        <div class="accordion-item" data-aos="fade-up">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour">
+
+                    <span>4. ความเปลี่ยนแปลงเผยให้เห็นอะไรในตัวมนุษย์?</span>
+
+                </button>
+            </h2>
+
+            <div id="collapseFour"
+                 class="accordion-collapse collapse"
+                 aria-labelledby="headingFour"
+                 data-bs-parent="#ideaAccordion">
+
+                <div class="accordion-body lh-lg"
+                     style="text-indent: 2em;">
+                    เมื่อสถานการณ์ในครอบครัวเปลี่ยนไป พฤติกรรมของแต่ละคนก็เปลี่ยนตามไปด้วย
+                    ชวนให้พิจารณาว่าความยากลำบากสามารถเผยให้เห็นความรู้สึก
+                    และทัศนคติที่ซ่อนอยู่ได้อย่างไร
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="reflection-panel mt-4" data-aos="fade-up">
+        <div>
+            <p class="reflection-label mb-1">REFLECT &amp; RESPOND</p>
+            <h3 class="h5 mb-2">แล้วคุณล่ะ คิดอย่างไร?</h3>
+            <p class="mb-0 reflection-copy">ลองเขียนความคิดสั้น ๆ หลังอ่านคำถาม เพื่อทบทวนมุมมองของตัวเอง</p>
+        </div>
+        <button type="button" class="reflection-button" id="reflectionToggle" aria-expanded="false" aria-controls="reflectionForm"><span id="reflectionToggleLabel">ลองคิดต่อ</span> <span aria-hidden="true">↗</span></button>
+        <form id="reflectionForm" class="reflection-form" hidden>
+            <label for="reflectionText" class="form-label">ความคิดของคุณ</label>
+            <textarea id="reflectionText" class="form-control" rows="3" placeholder="เขียนสิ่งที่คุณได้คิดจากเรื่องนี้..."></textarea>
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+                <button type="submit" class="reflection-button">บันทึกไว้ในหน้านี้</button>
+                <span id="reflectionStatus" class="reflection-status" role="status"></span>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer id="about" class="bg-dark text-white py-5">
+
+        <div class="container text-center">
+
+            <h3 class="mb-4">
+                “คุณค่าสูงสุดของ Metamorphosis คือการเตือนใจไม่ให้เรากลายเป็นแมลง...
+                ในสายตาของตัวเอง”
+            </h3>
+
+            <p class="lh-lg" style="text-indent: 2em;">
+                หนังสือเล่มนี้ทำหน้าที่เป็น "ขวานที่จามลงบนทะเลน้ำแข็งในตัวเรา"
+                (ตามคำนิยามหนังสือที่ดีของคาฟคา)
+                ที่ช่วยปลุกเราให้ตื่นมาเผชิญหน้ากับความจริงอันโหดร้ายของโลกทุนนิยม
+                และย้ำเตือนให้เราตระหนักถึงคุณค่าความเป็นมนุษย์ที่ไม่ได้ผูกติดอยู่กับแค่
+                หน้าที่การงานหรือตัวเลขเงินตรา รวมถึงกระตุ้นให้เราโอบกอดความเข้าอกเข้าใจ
+                ต่อผู้คนรอบตัวที่กำลังเผชิญชะตากรรมที่ยากลำบาก
+                ก่อนที่เราจะเผลอผลักไสพวกเขาให้กลายเป็นสิ่งแปลกปลอม
+            </p>
+
+            <div class="footer-brand">BOOKER <span>·</span> READ BEYOND THE PAGES</div>
+        </div>
+
+    </footer>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="กลับขึ้นด้านบน" title="กลับขึ้นด้านบน">↑</button>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 80,
+            disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        });
+    </script>
+    <!-- จัดการเมนู -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.getElementById("mainMenu");
+            const closeButton = document.querySelector("#mainMenu .close-menu");
+            const menuLinks = document.querySelectorAll("#mainMenu .menu-link");
+
+            if (!menu) return;
+
+            function closeMenu() {
+                if (window.innerWidth < 768 && menu.classList.contains("show")) {
+                    bootstrap.Collapse.getOrCreateInstance(menu, {
+                        toggle: false
+                    }).hide();
+                }
+            }
+
+            if (closeButton) {
+                closeButton.addEventListener("click", closeMenu);
+            }
+
+            menuLinks.forEach(function (link) {
+                link.addEventListener("click", closeMenu);
+            });
+        });
+
+        // Reading progress bar and back-to-top button
+        const progressBar = document.getElementById("readingProgress");
+        const backToTop = document.getElementById("backToTop");
+
+        function updateReadingProgress() {
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+            if (progressBar) progressBar.style.width = progress + "%";
+            if (backToTop) backToTop.classList.toggle("is-visible", window.scrollY > 450);
+        }
+        window.addEventListener("scroll", updateReadingProgress, { passive: true });
+        updateReadingProgress();
+
+        if (backToTop) {
+            backToTop.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+                });
+            });
+        }
+
+        // Reflection form: save the note in this page session only (no server/database)
+        const reflectionToggle = document.getElementById("reflectionToggle");
+        const reflectionForm = document.getElementById("reflectionForm");
+        const reflectionText = document.getElementById("reflectionText");
+        const reflectionToggleLabel = document.getElementById("reflectionToggleLabel");
+        const reflectionStatus = document.getElementById("reflectionStatus");
+
+        if (reflectionToggle && reflectionForm) {
+            reflectionToggle.addEventListener("click", function () {
+                const willOpen = reflectionForm.hidden;
+                reflectionForm.hidden = !willOpen;
+                reflectionToggle.setAttribute("aria-expanded", String(willOpen));
+                if (reflectionToggleLabel) reflectionToggleLabel.textContent = willOpen ? "ซ่อนช่องเขียน" : "ลองคิดต่อ";
+                if (willOpen) reflectionText.focus();
+            });
+            reflectionForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                if (!reflectionText.value.trim()) {
+                    reflectionStatus.textContent = "ลองเขียนความคิดสักเล็กน้อยก่อนบันทึก";
+                    return;
+                }
+                reflectionStatus.textContent = "บันทึกไว้ในหน้านี้แล้ว (จะหายเมื่อรีเฟรชหน้า)";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
